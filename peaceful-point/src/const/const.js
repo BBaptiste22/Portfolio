@@ -24,7 +24,10 @@ export const IconKeys = {
   git: "git",
   github: "github",
   nodejs: "nodejs",
-  // here add more icon keys
+  symfony: "symfony",
+  typeScript: "typeScript",
+  nextjs: "nextjs",
+  react: "react",
 };
 
 export const skills = [
@@ -56,6 +59,10 @@ export const skills = [
     title: "Node Js",
     icon: IconKeys.nodejs,
   },
+  {
+    title: "Symfony",
+    icon: IconKeys.symfony,
+  },
 ];
 
 export const projects = [
@@ -74,12 +81,6 @@ export const projects = [
       {
         icon: IconKeys.tailwind,
       },
-      {
-        icon: IconKeys.zustand,
-      },
-      {
-        icon: IconKeys.shadcn,
-      },
     ],
   },
   {
@@ -96,12 +97,6 @@ export const projects = [
       },
       {
         icon: IconKeys.tailwind,
-      },
-      {
-        icon: IconKeys.mongodb,
-      },
-      {
-        icon: IconKeys.stripe,
       },
     ],
   },
@@ -141,9 +136,6 @@ export const projects = [
       },
       {
         icon: IconKeys.tailwind,
-      },
-      {
-        icon: IconKeys.reactQuery,
       },
     ],
   },
@@ -217,23 +209,13 @@ export const projects = [
     description: `Clon de la página de Spotify con autenticación de usuario, reproductor de canciones, etc `,
     technologies: [
       {
-        icon: IconKeys.react,
-      },
-      {
         icon: IconKeys.javaScript,
       },
       {
         icon: IconKeys.tailwind,
       },
-      {
-        icon: IconKeys.redux,
-      },
-      {
-        icon: IconKeys.reactQuery,
-      },
     ],
   },
-
   {
     img: "../../../img/landing.webp",
     title: "Landing Realidad Virtual",
@@ -241,9 +223,6 @@ export const projects = [
     description: `landing page de gafas de realidad virtual donde se muestra el
               producto y como funciona`,
     technologies: [
-      {
-        icon: IconKeys.astro,
-      },
       {
         icon: IconKeys.css,
       },
