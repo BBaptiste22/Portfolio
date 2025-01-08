@@ -1,18 +1,18 @@
 export const studies = [
   {
-    title: "Técnico en desarrollo de software",
-    corporation: "SENA - Montería (Córdoba) ",
-    date: "02/2019 – 12/2019",
+    title: "BTS SIO option SLAM ",
+    corporation: "Lycée Elie Vinet -  Barbezieux-Saint-Hilaire",
+    date: "09/2023 – 06/2025",
   },
   {
-    title: "Desarrollador Front-end React Js",
-    corporation: "Alura Latam - Remoto",
-    date: "04/2023 – 09/2023",
+    title: "Baccalauréat STMG option mercatique",
+    corporation: "Lycée Polyvalent Jean Hyppolite - Jonzac",
+    date: "09/2020 – 07/2023",
   },
   {
-    title: "Curso profesional de React Js",
-    corporation: "Código facilito - Remoto",
-    date: "04/2023 – 04/2023",
+    title: "Brevet des collège avec mention bien",
+    corporation: "Collège Arlette Guirado - Archiac",
+    date: "09/2016 – 07/2020",
   },
 ];
 

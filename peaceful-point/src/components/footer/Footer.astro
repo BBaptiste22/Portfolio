@@ -1,107 +1,116 @@
 <footer>
   <section class="section-footer">
-    <div class="linear-grandient-1"></div>
-    <div class="container-footer">
-      <h2 class="title-contact" id="contacto">Contacto</h2>
-      <div class="container-redes">
-        <a href="https://wa.me/+573166026155" target="_blank">
-          <li class="li-contact">
-            <i class="fa-brands fa-whatsapp icon-whatsapp"></i>
-            <p>Whatsapp</p>
-          </li>
-        </a>
-
-        <a href="https://github.com/Osnaider19" target="_blank">
-          <li class="li-contact">
-            <i class="fa-brands fa-github"></i>
-            <p>Github</p>
-          </li>
-        </a>
-
-        <a href="https://www.instagram.com/osnaider_m19/" target="_blank">
-          <li class="li-contact">
-            <i class="fa-brands fa-instagram"></i>
-            <p>Instagram</p>
-          </li>
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/osnaider-mart%C3%ADnez-154b67256/"
-          target="_blank"
-        >
-          <li class="li-contact">
-            <i class="fa-brands fa-linkedin"></i>
-            <p>Linkedin</p>
-          </li>
-        </a>
+      <div class="linear-gradient"></div>
+      <div class="container-footer">
+          <h2 class="title-contact" id="contacto">Contact</h2>
+          <div class="container-redes">
+              <a href="https://wa.me/+573166026155" target="_blank">
+                  <li class="li-contact">
+                      <i class="fa-brands fa-whatsapp icon-whatsapp"></i>
+                      <p>WhatsApp</p>
+                  </li>
+              </a>
+              <a href="https://github.com/Osnaider19" target="_blank">
+                  <li class="li-contact">
+                      <i class="fa-brands fa-github"></i>
+                      <p>GitHub</p>
+                  </li>
+              </a>
+              <a href="https://www.linkedin.com/in/osnaider-mart%C3%ADnez-154b67256/" target="_blank">
+                  <li class="li-contact">
+                      <i class="fa-brands fa-linkedin"></i>
+                      <p>LinkedIn</p>
+                  </li>
+              </a>
+          </div>
+          <div class="container-copy">
+              <p>&copy; 2025 BERNARD Baptiste. Tous droits réservés.</p>
+          </div>
       </div>
-    </div>
   </section>
 </footer>
 
 <style>
-  .linear-grandient-1 {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, rgba(1, 190, 150, 0.5), #000);
-    z-index: 0;
-  }
-  .section-footer {
-    position: relative;
-    width: 100%;
-    background-color: #111111;
-  }
-  .container-footer {
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px 0;
-    max-width: 1355px;
-  }
-  .title-contact {
-    color: #f6f6f9;
-    padding: 10px 0;
-    font-size: 25px;
-    font-weight: 700;
-    scroll-margin-top: 80px;
-  }
-  .container-redes {
-    position: relative;
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
-    padding: 30px 0;
-    flex-wrap: wrap;
-  }
+/* Fond dégradé animé */
+.linear-gradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #01be96, #ff6b6b, #f5b7b1);
+  z-index: 0;
+  animation: gradientAnimation 6s ease infinite;
+  background-size: 300% 300%;
+}
 
-  .container-redes a {
-    text-decoration: none;
-    color: #f6f6f9;
-  }
-  .li-contact {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    transition: color 0.2s ease-in-out;
-  }
-  .li-contact i {
-    font-size: 30px;
-  }
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-  .li-contact:hover {
-    color: #01be96;
-  }
-  .container-copy {
-    position: relative;
-    color: #f6f6f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 10px 0;
-  }
+/* Section footer principale */
+.section-footer {
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+  background: #1a1a2e;
+  overflow: hidden;
+}
+
+.container-footer {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.title-contact {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Liens et icônes */
+.container-redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.container-redes a {
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.li-contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.li-contact i {
+  font-size: 28px;
+}
+
+.li-contact:hover {
+  color: #01be96;
+  transform: scale(1.1);
+}
+
+/* Footer Copy */
+.container-copy {
+  margin-top: 30px;
+  color: #ddd;
+  font-size: 14px;
+}
 </style>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
