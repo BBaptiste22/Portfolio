@@ -31,23 +31,15 @@
 </footer>
 
 <style>
-/* Fond dégradé animé */
+/* Fond dégradé vertical allant de #354055 à un bleu plus foncé (#1a2a3a) */
 .linear-gradient {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #01be96, #ff6b6b, #f5b7b1);
+  background: linear-gradient(to bottom, #354055, #2a3a47, #1a2a3a); /* Dégradé progressif du bleu-gris vers un bleu plus foncé de haut en bas */
   z-index: 0;
-  animation: gradientAnimation 6s ease infinite;
-  background-size: 300% 300%;
-}
-
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
 }
 
 /* Section footer principale */

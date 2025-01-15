@@ -2,7 +2,6 @@
 import { projects } from "../../../const/const";
 import Project from "./Project.astro";
 ---
-
 <section class="section-projects">
   <div class="linear-grandient-1"></div>
   <div class="container-projects">
@@ -29,10 +28,10 @@ import Project from "./Project.astro";
   .linear-grandient-1 {
     position: absolute;
     left: 0;
-    top: 1px;
+    top: 0; /* Modifier cette ligne pour éviter la ligne noire */
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(1, 190, 150, 0.5), #000);
+    background: linear-gradient(to top, #707070, rgba(85, 108, 150, 0.5)); /* Conserver le dégradé */
     z-index: 0;
   }
 
@@ -48,6 +47,7 @@ import Project from "./Project.astro";
     margin: 0 auto;
     max-width: 1355px;
   }
+
   .title-projects {
     position: relative;
     display: block;
@@ -67,6 +67,7 @@ import Project from "./Project.astro";
     width: 100%;
     height: 100%;
   }
+
   .ul-projects a {
     text-decoration: none;
   }
@@ -79,12 +80,14 @@ import Project from "./Project.astro";
       gap: 50px;
     }
   }
+
   @media (min-width: 700px) {
     .ul-projects {
       grid-template-columns: repeat(2, 1fr);
       gap: 30px;
     }
   }
+
   @media (min-width: 1200px) {
     .ul-projects {
       grid-template-columns: repeat(3, 1fr);

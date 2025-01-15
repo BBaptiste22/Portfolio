@@ -13,7 +13,7 @@ html {
 }
 body {
   font-family: "ABeeZee", sans-serif;
-  background-color: #556C96;
+  background-color: #1D2636;
 }
 html::-webkit-scrollbar {
   background-color: #46465e;
@@ -27,5 +27,5 @@ html::-webkit-scrollbar-thumb {
 
 main {
   position: relative;
-  background-color: #556C96;
+  background-color: #1D2636;
 }
