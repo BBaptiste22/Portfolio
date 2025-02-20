@@ -1,0 +1,254 @@
+---
+import { Image } from "astro:assets";
+import photoperfil from "../../../../public/img/photo-perfil.webp";
+---
+
+<div class="content-presentation">
+  <div class="container-presentation">
+    <div class="container-text">
+      <h2 class="text-name">BERNARD Baptiste</h2>
+      <div class="container-profession">
+        <span class="p-profession">Développeur web et mobile</span>
+      </div>
+      <p class="p-presentation">
+        Passionné par la création d'applications web et mobiles. Je cherche constamment à apprendre et à développer des solutions innovantes pour résoudre des problèmes complexes.
+      </p>
+      <div class="container-curriculum">
+        <a href="https://drive.google.com/file/d/1HvEt2TZEmKItyL7SDM1vyXD-TgpLHmgh/view?usp=sharing" class="a-curriculum" target="_blank">Voir mon curriculum vitæ</a>
+      </div>
+      <div class="container-social">
+        <p>Echa un vistazo a mi</p>
+        <a href="https://github.com/Osnaider19" target="_blank">
+          <li class="li-social">
+            <i class="fa-brands fa-github"></i>
+          </li>
+        </a>
+        <a href="https://www.linkedin.com/in/osnaider-mart%C3%ADnez-154b67256/" target="_blank">
+          <li class="li-social">
+            <i class="fa-brands fa-linkedin"></i>
+          </li>
+        </a>
+      </div>
+    </div>
+    <div class="container-photo-profile">
+      <div class="photo-perfil">
+        <picture>
+          <Image src={photoperfil} alt="BERNARD Baptiste" id="inicio" />
+        </picture>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const letters = document.querySelectorAll(".p-profession");
+  letters.forEach((letter) => {
+    letter.addEventListener("mouseenter", () => {
+      toggle(letter);
+    });
+  });
+
+  function toggle(letter) {
+    letter.classList.add("bouncing");
+    letter.addEventListener("animationend", () => {
+      letter.classList.remove("bouncing");
+    });
+  }
+</script>
+
+<style>
+  .content-presentation {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #1D2636, #333F53); /* Dégradé inversé : haut clair, bas foncé */
+  }
+
+  .container-presentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    width: 90%;
+    max-width: 1355px;
+    margin: 0 auto;
+    height: 100%;
+    color: #f6f6f9;
+  }
+
+  .container-text {
+    width: 50%;
+    color: #f6f6f9;
+  }
+
+  .text-name {
+    padding: 5px 0;
+    font-size: 30px;
+    color: #f6f6f9;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 30px;
+  }
+
+  .container-profession {
+    cursor: pointer;
+    padding: 5px 0;
+  }
+
+  .p-profession {
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: capitalize;
+  }
+
+  .bouncing {
+    transition: 0.8s all;
+    color: #01be96;
+    animation: rubberband 400ms alternate ease-out;
+  }
+
+  @keyframes rubberband {
+    10% {
+      transform: scaleX(1);
+    }
+    40% {
+      transform: scaleX(1.12) scaleY(0.75);
+    }
+    55% {
+      transform: scaleX(0.85) scaleY(1);
+    }
+    75% {
+      transform: scaleX(0.9) scaleY(1);
+    }
+    90% {
+      transform: scaleX(1.85) scaleY(0.95);
+    }
+    100% {
+      transform: scaleX(1) scaleY(1);
+    }
+  }
+
+  .p-presentation {
+    padding: 12px 0;
+    font-size: 19px;
+    width: 90%;
+    text-align: left;
+  }
+
+  .container-curriculum {
+    padding: 40px 0;
+    display: flex;
+    gap: 20px;
+  }
+
+  .a-curriculum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    color: #f6f6f9;
+    border: 1px solid #FF7A70;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .a-curriculum:hover {
+    background-color: rgba(190, 79, 89, 0.3);
+    transform: translateX(4px);
+  }
+
+  .container-social {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .container-social a {
+    text-decoration: none;
+  }
+
+  .li-social {
+    list-style: none;
+    background-color: #FF7A70;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 40px;
+  }
+
+  .li-social i {
+    font-size: 25px;
+    color: #f6f6f9;
+  }
+
+  .li-social:hover {
+    transform: rotate(-360deg);
+  }
+
+  .container-photo-profile {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .photo-perfil {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 110px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .photo-perfil img {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(-10px -5px 10px #000) contrast(110%);
+    transition: 0.3s;
+  }
+
+  @media (max-width: 900px) {
+    .container-presentation {
+      flex-direction: column;
+      gap: 30px;
+      padding-top: 50px;
+    }
+    .container-photo-profile {
+      width: 100%;
+      justify-content: center;
+    }
+    .photo-perfil {
+      margin: 0;
+    }
+    .container-text {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .p-presentation {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .container-curriculum {
+      display: flex;
+      gap: 10px;
+    }
+  }
+</style>
