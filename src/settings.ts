@@ -1,5 +1,5 @@
 export const profile = {
-	fullName: 'Ytesttettetetetee',
+	fullName: 'BERNARD Baptiste',
 	title: '',
 	institute: '',
 	author_name: '', // Author name to be highlighted in the papers section
@@ -10,10 +10,10 @@ export const profile = {
 
 // Set equal to an empty string to hide the icon that you don't want to display
 export const social = {
-	email: '',
+	email: 'bernard.baptiste08@gmail.com',
 	linkedin: '',
-	x: 'https://www.x.com/',
-	github: '',
+	x: '',
+	github: 'https://bbaptiste22.github.io',
 	gitlab: '',
 	scholar: '',
 	inspire: '',
@@ -32,7 +32,7 @@ export const template = {
 }
 
 export const seo = {
-	default_title: 'Astro Academia',
+	default_title: 'Portfolio | BERANRD Baptiste',
 	default_description: 'Astro Academia is a template for academic websites.',
 	default_image: '/images/astro-academia.png',
 }
