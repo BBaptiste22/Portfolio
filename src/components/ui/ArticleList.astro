@@ -1,25 +1,48 @@
 ---
-interface Props {
-  listTitle: string;
-  listItems: {
-    title: string;
-    journal: string;
-    time: string;
-  }[];
-}
-const {listTitle, listItems} = Astro.props
----
+const listItems = [
+  { title: "HTML", image: "images/html.webp" },
+  { title: "CSS", image: "images/css.png" },
+  { title: "JavaScript", image: "images/js.webp" },
+  { title: "Python", image: "images/py.png" },
+  { title: "Java", image: "images/java.png" },
+  { title: "PHP", image: "images/php.png" },
+  { title: "Bootstrap", image: "images/bootstrap.png" },
+  { title: "Symfony", image: "images/symfony.webp" },
+  { title: "Tailwind", image: "images/tailwind.png" },
+  { title: "MySQL", image: "images/mysql.png" },
+  { title: "PostgreSQL", image: "images/postgresql.png" },
+];
 
-<h2 class='text-3xl font-bold mb-8'>Mes Compétences</h2>
-		<div class='space-y-6'>
-			{
-				listItems.map(item => (
-					<div class='p-6 rounded-lg text-base-content bg-base-200'>
-						<h3 class='text-xl font-semibold mb-2'>{item.title}</h3>
-						<p >
-							{item.journal} • index{item.time}
-						</p>
-					</div>
-				))
-			}
+const listLogi =[
+	{title: "Visual Studio Code", image: "images/vsc.png"},
+	{title: "Android Studio", image: "images/android.png"},
+	{title: "Umbrello", image: "images/uml.png"},
+	{title: "GitHub", image: "images/github.png"},
+	{title: "GitLab", image: "images/gitlab.png"},
+	{title: "Hugging Face", image: "images/hf.png"},
+]
+---
+<h2 class="text-3xl font-bold mb-6 uppercase tracking-wide">Langages maîtrisés</h2>
+
+<div class="bg-gray-100 p-8">
+  <div class="grid grid-cols-6 gap-8">
+    {listItems.map((item) => (
+      <div class="flex flex-col items-center text-center">
+        <img src={item.image} alt={item.title} class="w-20 h-20 object-cover" />
+        <h3 class="text-lg font-semibold mt-3">{item.title}</h3>
+      </div>
+    ))}
+  </div>
+</div>
+
+<h2 class="text-3xl font-bold mt-12 mb-6 uppercase tracking-wide">Logiciels maîtrisés</h2>
+<div class="bg-gray-100 p-8">
+	<div class="grid grid-cols-6 gap-8">
+	  {listLogi.map((item) => (
+		<div class="flex flex-col items-center text-center">
+		  <img src={item.image} alt={item.title} class="w-20 h-20 object-cover" />
+		  <h3 class="text-lg font-semibold mt-3">{item.title}</h3>
 		</div>
+	  ))}
+	</div>
+  </div>
