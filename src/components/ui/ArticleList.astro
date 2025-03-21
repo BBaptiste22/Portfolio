@@ -13,22 +13,22 @@ const listItems = [
   { title: "PostgreSQL", image: "images/postgresql.png" },
 ];
 
-const listLogi =[
-	{title: "Visual Studio Code", image: "images/vsc.png"},
-	{title: "Android Studio", image: "images/android.png"},
-	{title: "Umbrello", image: "images/uml.png"},
-	{title: "GitHub", image: "images/github.png"},
-	{title: "GitLab", image: "images/gitlab.png"},
-	{title: "Hugging Face", image: "images/hf.png"},
-]
+const listLogi = [
+  { title: "Visual Studio Code", image: "images/vsc.png" },
+  { title: "Android Studio", image: "images/android.png" },
+  { title: "Umbrello", image: "images/uml.png" },
+  { title: "GitHub", image: "images/github.png" },
+  { title: "GitLab", image: "images/gitlab.png" },
+  { title: "Hugging Face", image: "images/hf.png" },
+];
 ---
 <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide">Langages maîtrisés</h2>
 
 <div class="bg-gray-100 p-8">
-  <div class="grid grid-cols-6 gap-8">
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-center">
     {listItems.map((item) => (
       <div class="flex flex-col items-center text-center">
-        <img src={item.image} alt={item.title} class="w-20 h-20 object-cover" />
+        <img src={item.image} alt={item.title} class="w-auto max-w-full h-20 object-contain" />
         <h3 class="text-lg font-semibold mt-3">{item.title}</h3>
       </div>
     ))}
@@ -37,12 +37,12 @@ const listLogi =[
 
 <h2 class="text-3xl font-bold mt-12 mb-6 uppercase tracking-wide">Logiciels maîtrisés</h2>
 <div class="bg-gray-100 p-8">
-	<div class="grid grid-cols-6 gap-8">
-	  {listLogi.map((item) => (
-		<div class="flex flex-col items-center text-center">
-		  <img src={item.image} alt={item.title} class="w-20 h-20 object-cover" />
-		  <h3 class="text-lg font-semibold mt-3">{item.title}</h3>
-		</div>
-	  ))}
-	</div>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-center">
+    {listLogi.map((item) => (
+      <div class="flex flex-col items-center text-center">
+        <img src={item.image} alt={item.title} class="w-auto max-w-full h-20 object-contain" />
+        <h3 class="text-lg font-semibold mt-3">{item.title}</h3>
+      </div>
+    ))}
   </div>
+</div>
