@@ -1,3 +1,5 @@
+import { link } from "framer-motion/client";
+
 export const experiences = [
 	{
 		company: '',
@@ -45,19 +47,11 @@ export const skills = [
 
 export const publications = [
 	{
-		title: '',
-		authors: '',
-		journal: '',
-		time: '',
-		link: '',
-		abstract: '',
+	  title: "GRAD",
+	  image: "/images/publications/uranium.jpg",
+	  description: "Site vitrine d'une entreprise d'installation de terasse, c'est un site fait en HTML, CSS et JS ainsi que bootstrap dans le cadre d'un devoir de première année de BTS.",
+	  link: "",
 	},
-	// {
-	// 	title: 'The Radiation of Uranium Compounds',
-	// 	authors: 'Marie Curie',
-	// 	journal: 'Comptes Rendus de l’Académie des Sciences',
-	// 	time: '1898',
-	// 	link: '#',
-	// 	abstract: 'Early research leading to the identification of uranium’s radioactive properties.',
-	// },
-];
+	
+  ];
+  

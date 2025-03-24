@@ -13,7 +13,7 @@ export const social = {
 	email: 'bernard.baptiste08@gmail.com',
 	linkedin: '',
 	x: '',
-	github: 'https://bbaptiste22.github.io',
+	github: 'https://github.com/BBaptiste22',
 	gitlab: '',
 	scholar: '',
 	inspire: '',

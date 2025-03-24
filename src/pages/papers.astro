@@ -1,53 +1,59 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { publications } from "@/data/cv";
-import { highlightAuthor } from "@/lib/utils";
-import {template} from "@/settings";
-
-const ALL_PAPERS = publications; // This will be replaced with dynamic data later
 ---
 
-<Layout title="Papers">
+<Layout title="Mes Projets">
   <div class="prose max-w-none">
-    <h1 class="text-3xl font-bold mb-8">Publications</h1>
+    <h1 class="text-4xl font-extrabold mb-8 text-center text-black">
+      🚀 Mes Projets
+    </h1>
 
-    <div class="space-y-8">
-      {
-        ALL_PAPERS.map((paper) => (
-          <div class="card bg-base-200">
-            <div class="card-body">
-              <h2 class="card-title text-xl">
-                <a href={template.base + paper.link} class="hover:text-accent">
-                  {paper.title}
-                </a>
-              </h2>
-              <p class="text-base mb-2">
-                <span class="font-medium">Authors:</span>{" "}
-                <span set:html={highlightAuthor(paper.authors)} />
-              </p>
-              <p class="text-sm mb-3">
-                <span class="italic">{paper.journal}</span> • {paper.time}
-              </p>
-              <p class="text-sm text-base-content/80">{paper.abstract}</p>
-              <div class="card-actions justify-end mt-4">
-                <a href={paper.link} class="btn btn-sm btn-secondary text-secondary-content">
-                  Read Paper
-                </a>
-              </div>
-            </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {publications.map((paper) => (
+        <div class="relative group max-w-sm bg-white border border-gray-300 rounded-2xl shadow-xl overflow-hidden transition-transform transform hover:scale-[1.05] hover:shadow-lg hover:border-gray-500">
+          
+          <img class="rounded-t-2xl h-52 w-full object-cover transition-all duration-300 group-hover:opacity-80" src={paper.image} alt={paper.title} />
+          
+          <div class="absolute top-3 right-3 bg-gray-600 text-white text-xs px-3 py-1 rounded-full shadow-lg animate-pulse">
+            {paper.date}
           </div>
-        ))
-      }
-    </div>
 
-    <div class="flex justify-center mt-8">
-      <div class="join">
-        <button class="join-item btn btn-sm">«</button>
-        <button class="join-item btn btn-sm">1</button>
-        <button class="join-item btn btn-sm btn-active">2</button>
-        <button class="join-item btn btn-sm">3</button>
-        <button class="join-item btn btn-sm">»</button>
-      </div>
+          <div class="p-6 text-center">
+            <h5 class="mb-2 text-2xl font-bold tracking-wide text-black group-hover:text-gray-700 transition-all duration-300">
+              {paper.title}
+            </h5>
+            <p class="text-md text-gray-600 leading-relaxed">{paper.description}</p>
+
+            <a href={paper.link} target="_blank" class="inline-block mt-4 px-6 py-2 bg-gray-700 text-white text-sm font-semibold rounded-full">
+              Voir le projet
+            </a>
+          </div>
+
+        </div>
+      ))}
     </div>
   </div>
 </Layout>
+
+
+<style>
+  @keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-2px, -2px); }
+    80% { transform: translate(2px, 2px); }
+    100% { transform: translate(0); }
+  }
+
+  .animate-glitch {
+    animation: glitch 0.5s infinite;
+    background: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0px, rgba(255, 255, 255, 0.05) 2px, transparent 2px, transparent 4px);
+    mix-blend-mode: overlay;
+  }
+
+  .hover\:shadow-lg:hover {
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.7), 0px 0px 40px 5px rgba(0, 0, 0, 0.5);
+  }
+</style>
