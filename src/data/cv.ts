@@ -48,9 +48,9 @@ export const skills = [
 export const publications = [
 	{
 	  title: "GRAD",
-	  image: "/images/publications/uranium.jpg",
+	  image: "/images/GRAD.png",
 	  description: "Site vitrine d'une entreprise d'installation de terasse, c'est un site fait en HTML, CSS et JS ainsi que bootstrap dans le cadre d'un devoir de première année de BTS.",
-	  link: "",
+	  link: "https://github.com/BBaptiste22/GRAD",
 	},
 	
   ];
