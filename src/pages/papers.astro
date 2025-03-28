@@ -11,11 +11,17 @@ import { publications } from "@/data/cv";
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {publications.map((paper) => (
-        <div class="relative group max-w-sm bg-white border border-gray-300 rounded-2xl shadow-xl overflow-hidden transition-transform transform hover:scale-[1.05] hover:shadow-lg hover:border-gray-500">
-          
-          <img class="rounded-t-2xl h-52 w-full object-contain transition-all duration-300 group-hover:opacity-80" src={paper.image} alt={paper.title} />
+        <div 
+          class="relative group max-w-sm bg-white border border-gray-300 rounded-2xl shadow-xl overflow-hidden transition-transform transform hover:scale-[1.05] hover:shadow-lg hover:border-gray-500"
+        >
+          {/* Image cliquable */}
+          <img 
+            class="rounded-t-2xl h-52 w-full object-contain transition-all duration-300 group-hover:opacity-80 cursor-pointer modal-trigger"
+            src={paper.image}
+            alt={paper.title}
+            data-image={paper.image} 
+          />
 
-          
           <div class="absolute top-3 right-3 bg-gray-600 text-white text-xs px-3 py-1 rounded-full shadow-lg animate-pulse">
             {paper.date}
           </div>
@@ -30,31 +36,45 @@ import { publications } from "@/data/cv";
               Voir le projet
             </a>
           </div>
-
         </div>
       ))}
+    </div>
+
+    <div id="image-modal" class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-75 z-50 hidden">
+      <div class="relative p-4">
+        <button 
+          class="absolute top-2 right-2 text-white text-2xl font-bold cursor-pointer" 
+          id="close-modal"
+        >
+          ✖
+        </button>
+        <img id="modal-image" class="max-w-[90vw] max-h-[90vh] rounded-lg" src="" alt="Agrandissement de l'image" />
+      </div>
     </div>
   </div>
 </Layout>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("image-modal");
+    const modalImage = document.getElementById("modal-image");
+    const closeModal = document.getElementById("close-modal");
 
-<style>
-  @keyframes glitch {
-    0% { transform: translate(0); }
-    20% { transform: translate(-2px, 2px); }
-    40% { transform: translate(2px, -2px); }
-    60% { transform: translate(-2px, -2px); }
-    80% { transform: translate(2px, 2px); }
-    100% { transform: translate(0); }
-  }
+    document.querySelectorAll(".modal-trigger").forEach(img => {
+      img.addEventListener("click", function () {
+        modalImage.src = this.getAttribute("data-image");
+        modal.classList.remove("hidden");
+      });
+    });
 
-  .animate-glitch {
-    animation: glitch 0.5s infinite;
-    background: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0px, rgba(255, 255, 255, 0.05) 2px, transparent 2px, transparent 4px);
-    mix-blend-mode: overlay;
-  }
+    closeModal.addEventListener("click", function () {
+      modal.classList.add("hidden");
+    });
 
-  .hover\:shadow-lg:hover {
-    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.7), 0px 0px 40px 5px rgba(0, 0, 0, 0.5);
-  }
-</style>
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        modal.classList.add("hidden");
+      }
+    });
+  });
+</script>

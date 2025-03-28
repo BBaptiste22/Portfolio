@@ -56,26 +56,33 @@ export const publications = [
 		title: "Lioran",
 		image: `${import.meta.env.BASE_URL}images/lioran.png`,
 		description: "Lioran est une application Android développée en Java pour la gestion d’une station de ski, avec une API Symfony pour la gestion des données. Ce projet a été réalisé dans le cadre de ma deuxième année de BTS SIO.",
-		link: "https://github.com/BBaptiste22/GRAD",
-	  },
-	  {
+		link: "",
+	},
+	{
 		title: "G-Bien Formé",
 		image: `${import.meta.env.BASE_URL}images/formation.png`,
 		description: "G-Bien Formé est une application web développée en Symfony avec une base de données PostgreSQL, elle facilite l’inscription des salariés à plusieurs formations. Ce projet a été réalisé dans le cadre de ma deuxième année de BTS SIO. ",
-		link: "https://github.com/BBaptiste22/GRAD",
-	  },
-	  {
+		link: "",
+	},
+	{
+		title: "Tournois de pétanque",
+		image: `${import.meta.env.BASE_URL}images/petanque.png`,
+		description: "Réalisation d'un site web pour la gestion de tournois de pétanque dans le cadre de mon premier stage de BTS dans l'association Aunis Freeware. Ce site est développé en PHP, JavaScript, Bootstrap et Ajax.",
+		link: "https://github.com/BBaptiste22/GDT",
+	},
+	{
 		title: "GAIA",
 		image: `${import.meta.env.BASE_URL}images/GAIA.png`,
 		description: "Réalisation du site internet GAIA, dédié à la présentation du hackathon du Salon de l'Agriculture 2025, dans le cadre de mon stage de deuxième année au sein de l'entreprise Ekylibre. Ce site a été entièrement développé en HTML, CSS, JavaScript et Markdown.",
-		link: "https://github.com/BBaptiste22/GRAD",
-	  },
-	  {
-		title: "Tournois de pétanque",
-		image: `${import.meta.env.BASE_URL}images/petanque.png`,
-		description: "",
-		link: "https://github.com/BBaptiste22/GRAD",
-	  },
+		link: "",
+	},
+	{
+		title: "ChatBot GAIA",
+		image: `${import.meta.env.BASE_URL}images/bot.png`,
+		description: "Réalisation d’un ChatBot GAIA pour la démo d’un projet du hackathon du Salon de l’Agriculture 2025, projet réalisé lors de mon stage de deuxième année au sein de l’entreprise Ekylibre. Ce ChatBot a été développé en Python, en utilisant les outils Hugging Face et l’API Llama.",
+		link: "",
+	},
+	
 	
 
 ];
