@@ -13,7 +13,8 @@ import { publications } from "@/data/cv";
       {publications.map((paper) => (
         <div class="relative group max-w-sm bg-white border border-gray-300 rounded-2xl shadow-xl overflow-hidden transition-transform transform hover:scale-[1.05] hover:shadow-lg hover:border-gray-500">
           
-          <img class="rounded-t-2xl h-52 w-full object-cover transition-all duration-300 group-hover:opacity-80" src={paper.image} alt={paper.title} />
+          <img class="rounded-t-2xl h-52 w-full object-contain transition-all duration-300 group-hover:opacity-80" src={paper.image} alt={paper.title} />
+
           
           <div class="absolute top-3 right-3 bg-gray-600 text-white text-xs px-3 py-1 rounded-full shadow-lg animate-pulse">
             {paper.date}
