@@ -83,7 +83,6 @@ export const publications = [
 		link: "",
 	},
 	
-	
 
 ];
   
