@@ -82,6 +82,12 @@ export const publications = [
 		description: "Réalisation d’un ChatBot GAIA pour la démo d’un projet du hackathon du Salon de l’Agriculture 2025, projet réalisé lors de mon stage de deuxième année au sein de l’entreprise Ekylibre. Ce ChatBot a été développé en Python, en utilisant les outils Hugging Face et l’API Llama.",
 		link: "",
 	},
+	{
+		title: "GLPI",
+		image: `${import.meta.env.BASE_URL}images/glpi.png`,
+		description: "Création d'un script Python afin de gerer l'envoi et la reception de ticket GLPI dans le cadre d'un projet de premiére année.",
+		link: "",
+	},
 	
 
 ];
