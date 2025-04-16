@@ -18,6 +18,7 @@ export const social = {
 	scholar: '',
 	inspire: '',
 	arxiv: '',
+	cv: `${import.meta.env.BASE_URL}images/cv.pdf`
 }
 
 export const template = {

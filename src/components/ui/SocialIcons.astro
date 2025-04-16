@@ -94,4 +94,16 @@ const calculatedContainerSize = activeSocial.length <= 5 ? 'size-12' : activeSoc
 				</svg>
 		</a>
 	}
+
+
+	{social.cv !== '' &&
+	<a href={social.cv} target="_blank" class={`${calculatedContainerSize} inline-flex items-center justify-center rounded-xl hover:bg-primary/20 transition-all duration-300`}>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class={calculatedIconSize} fill="currentColor">
+		<!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com -->
+		<path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zM192 416c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16h96c8.8 0 16 7.2 16 16v80zm0-144c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-80c0-8.8 7.2-16 16-16h96c8.8 0 16 7.2 16 16v80zm160-208H256v128h128V128c0-8.8-7.2-16-16-16z"/>
+		</svg>
+	</a>
+	}
+
+
 </div>

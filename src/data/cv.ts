@@ -53,6 +53,30 @@ export const publications = [
 	  link: "https://github.com/BBaptiste22/GRAD",
 	},
 	{
+		title: "GLPI",
+		image: `${import.meta.env.BASE_URL}images/glpi.png`,
+		description: "Création d'un script Python afin de gerer l'envoi et la reception de ticket GLPI dans le cadre d'un projet de premiére année.",
+		link: "",
+	},
+	{
+		title: "Tournois de pétanque",
+		image: `${import.meta.env.BASE_URL}images/petanque.png`,
+		description: "Réalisation d'un site web pour la gestion de tournois de pétanque dans le cadre de mon premier stage de BTS dans l'association Aunis Freeware. Ce site est développé en PHP, JavaScript, Bootstrap et Ajax.",
+		link: "https://github.com/BBaptiste22/GDT",
+	},
+	{
+		title: "SIOCINE",
+		image: `${import.meta.env.BASE_URL}images/siocine.png`,
+		description: "",
+		link: "",
+	},
+
+
+
+
+
+	
+	{
 		title: "Lioran",
 		image: `${import.meta.env.BASE_URL}images/lioran.png`,
 		description: "Lioran est une application Android développée en Java pour la gestion d’une station de ski, avec une API Symfony pour la gestion des données. Ce projet a été réalisé dans le cadre de ma deuxième année de BTS SIO.",
@@ -64,12 +88,7 @@ export const publications = [
 		description: "G-Bien Formé est une application web développée en Symfony avec une base de données PostgreSQL, elle facilite l’inscription des salariés à plusieurs formations. Ce projet a été réalisé dans le cadre de ma deuxième année de BTS SIO. ",
 		link: "",
 	},
-	{
-		title: "Tournois de pétanque",
-		image: `${import.meta.env.BASE_URL}images/petanque.png`,
-		description: "Réalisation d'un site web pour la gestion de tournois de pétanque dans le cadre de mon premier stage de BTS dans l'association Aunis Freeware. Ce site est développé en PHP, JavaScript, Bootstrap et Ajax.",
-		link: "https://github.com/BBaptiste22/GDT",
-	},
+	
 	{
 		title: "GAIA",
 		image: `${import.meta.env.BASE_URL}images/GAIA.png`,
@@ -82,12 +101,8 @@ export const publications = [
 		description: "Réalisation d’un ChatBot GAIA pour la démo d’un projet du hackathon du Salon de l’Agriculture 2025, projet réalisé lors de mon stage de deuxième année au sein de l’entreprise Ekylibre. Ce ChatBot a été développé en Python, en utilisant les outils Hugging Face et l’API Llama.",
 		link: "",
 	},
-	{
-		title: "GLPI",
-		image: `${import.meta.env.BASE_URL}images/glpi.png`,
-		description: "Création d'un script Python afin de gerer l'envoi et la reception de ticket GLPI dans le cadre d'un projet de premiére année.",
-		link: "",
-	},
+	
+	
 	
 
 ];
