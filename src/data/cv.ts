@@ -51,6 +51,7 @@ export const publications = [
 	  image: `${import.meta.env.BASE_URL}images/GRAD.png`,
 	  description: "Site vitrine d'une entreprise de création de terasse, ce site est fait en HTML, CSS, JS ainsi que bootstrap dans le cadre d'un devoir de première année de BTS.",
 	  link: "https://github.com/BBaptiste22/GRAD",
+	  showButton: true,
 	},
 	{
 		title: "GLPI",
@@ -63,6 +64,7 @@ export const publications = [
 		image: `${import.meta.env.BASE_URL}images/petanque.png`,
 		description: "Réalisation d'un site web pour la gestion de tournois de pétanque dans le cadre de mon premier stage de BTS dans l'association Aunis Freeware. Ce site est développé en PHP, JavaScript, Bootstrap et Ajax.",
 		link: "https://github.com/BBaptiste22/GDT",
+		showButton: true,
 	},
 	{
 		title: "SIOCINE",
@@ -99,6 +101,29 @@ export const publications = [
 		title: "ChatBot GAIA",
 		image: `${import.meta.env.BASE_URL}images/bot.png`,
 		description: "Réalisation d’un ChatBot GAIA pour la démo d’un projet du hackathon du Salon de l’Agriculture 2025, projet réalisé lors de mon stage de deuxième année au sein de l’entreprise Ekylibre. Ce ChatBot a été développé en Python, en utilisant les outils Hugging Face et l’API Llama.",
+		link: "",
+	},
+
+
+	{
+		title: "Veille informationnelle",
+		image: `${import.meta.env.BASE_URL}images/veille.png`,
+		description: "Réalisation d'une veille informationnelle sur l'evolution du développement mobile afin de se tenir informé des dernières tendances et technologies dans le domaine du développement mobile.",
+		link: "",
+		showButton: true,
+	},
+	{
+		title: "Jeu Othello",
+		image: `${import.meta.env.BASE_URL}images/othello.png`,
+		description: "Création d'un jeu Othello en Java, développé dans le cadre de mon projet de première année de BTS SIO.",
+		link: "",
+	},
+
+
+	{
+		title: "Pierre-papier-ciseaux ",
+		image: `${import.meta.env.BASE_URL}images/ppc.png`,
+		description: "Pierre-papier-ciseaux ",
 		link: "",
 	},
 	

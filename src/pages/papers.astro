@@ -32,9 +32,12 @@ import { publications } from "@/data/cv";
             </h5>
             <p class="text-md text-gray-600 leading-relaxed">{paper.description}</p>
 
+            {paper.showButton && (
             <a href={paper.link} target="_blank" class="inline-block mt-4 px-6 py-2 bg-gray-700 text-white text-sm font-semibold rounded-full">
               Voir le projet
             </a>
+            )}
+
           </div>
         </div>
       ))}
