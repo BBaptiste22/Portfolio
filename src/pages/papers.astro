@@ -11,15 +11,15 @@ import { publications } from "@/data/cv";
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {publications.map((paper) => (
-        <div 
+        <div
           class="relative group max-w-sm bg-white border border-gray-300 rounded-2xl shadow-xl overflow-hidden transition-transform transform hover:scale-[1.05] hover:shadow-lg hover:border-gray-500"
         >
           {/* Image cliquable */}
-          <img 
+          <img
             class="rounded-t-2xl h-52 w-full object-contain transition-all duration-300 group-hover:opacity-80 cursor-pointer modal-trigger"
             src={paper.image}
             alt={paper.title}
-            data-image={paper.image} 
+            data-image={paper.image}
           />
 
           <div class="absolute top-3 right-3 bg-gray-600 text-white text-xs px-3 py-1 rounded-full shadow-lg animate-pulse">
@@ -31,6 +31,10 @@ import { publications } from "@/data/cv";
               {paper.title}
             </h5>
             <p class="text-md text-gray-600 leading-relaxed">{paper.description}</p>
+
+
+            <p class="text-md text-gray-600 leading-relaxed"><span class="font-bold">Compétences :</span> {paper.competence}</p>
+
 
             {paper.showButton && (
             <a href={paper.link} target="_blank" class="inline-block mt-4 px-6 py-2 bg-gray-700 text-white text-sm font-semibold rounded-full">
@@ -45,8 +49,8 @@ import { publications } from "@/data/cv";
 
     <div id="image-modal" class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-75 z-50 hidden">
       <div class="relative p-4">
-        <button 
-          class="absolute top-2 right-2 text-white text-2xl font-bold cursor-pointer" 
+        <button
+          class="absolute top-2 right-2 text-white text-2xl font-bold cursor-pointer"
           id="close-modal"
         >
           ✖

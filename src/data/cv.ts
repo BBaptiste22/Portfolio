@@ -51,6 +51,7 @@ export const publications = [
 	  image: `${import.meta.env.BASE_URL}images/GRAD.png`,
 	  description: "Site vitrine d'une entreprise de création de terasse, ce site est fait en HTML, CSS, JS ainsi que bootstrap dans le cadre d'un devoir de première année de BTS.",
 	  link: "https://github.com/BBaptiste22/GRAD",
+	  competence: "Compétences utilisées dans ce projet...",
 	  showButton: true,
 	},
 	{
