@@ -30,7 +30,7 @@ export const education = [
 	// 	time: '1891 - 1895',
 	// 	degree: 'Master’s in Physics and Mathematics',
 	// 	location: 'Paris, France',
-	// 	description: 'Graduated at the top of her class in physics and second in mathematics.',
+	// 	description: 'uated at the top of her class in physics and second in mathematics.',
 	// },
 ];
 
@@ -49,9 +49,14 @@ export const publications = [
 	{
 	  title: "GRAD",
 	  image: `${import.meta.env.BASE_URL}images/GRAD.png`,
-	  description: "Site vitrine d'une entreprise de création de terasse, ce site est fait en HTML, CSS, JS ainsi que bootstrap dans le cadre d'un devoir de première année de BTS.",
+	  description:
+		"Site vitrine d'une entreprise de création de terrasse, ce site est fait en HTML, CSS, JS ainsi que bootstrap dans le cadre d'un devoir de première année de BTS.",
 	  link: "https://github.com/BBaptiste22/GRAD",
-	  competence: "Compétences utilisées dans ce projet...",
+	  competence: [
+		"Répondre aux incidents et aux demandes d’assistance et d’évolution",
+		"Développer la présence en ligne de l’organisation",
+		"Travailler en mode projet",
+	  ],
 	  showButton: true,
 	},
 	{
@@ -59,49 +64,89 @@ export const publications = [
 		image: `${import.meta.env.BASE_URL}images/glpi.png`,
 		description: "Création d'un script Python afin de gerer l'envoi et la reception de ticket GLPI dans le cadre d'un projet de premiére année.",
 		link: "",
+		competence: [
+			"Gérer le patrimoine informatique",
+			"Répondre aux incidents et aux demandes d’assistance et d’évolution",
+			"Travailler en mode projet",
+			"Mettre à disposition des utilisateurs un service informatique",
+		  ],
 	},
 	{
 		title: "Tournois de pétanque",
 		image: `${import.meta.env.BASE_URL}images/petanque.png`,
 		description: "Réalisation d'un site web pour la gestion de tournois de pétanque dans le cadre de mon premier stage de BTS dans l'association Aunis Freeware. Ce site est développé en PHP, JavaScript, Bootstrap et Ajax.",
 		link: "https://github.com/BBaptiste22/GDT",
+		competence: [
+			"Répondre aux incidents et aux demandes d’assistance et d’évolution",
+			"Développer la présence en ligne de l’organisation",
+			"Travailler en mode projet",
+			"Organiser son développement professionnel"
+		  ],
 		showButton: true,
 	},
 	{
 		title: "SIOCINE",
 		image: `${import.meta.env.BASE_URL}images/siocine.png`,
 		description: "",
-		link: "",
+		competence: [
+			"Répondre aux incidents et aux demandes d’assistance et d’évolution",
+			"Développer la présence en ligne de l’organisation",
+		  ],
+		link: "https://github.com/BBaptiste22/SIOCINE",
+		showButton: true,
 	},
-
-
-
-
-
 	
 	{
 		title: "Lioran",
 		image: `${import.meta.env.BASE_URL}images/lioran.png`,
 		description: "Lioran est une application Android développée en Java pour la gestion d’une station de ski, avec une API Symfony pour la gestion des données. Ce projet a été réalisé dans le cadre de ma deuxième année de BTS SIO.",
+		competence: [
+			"Gérer le patrimoine informatique",
+			"Répondre aux incidents et aux demandes d’assistance et d’évolution",
+			"Développer la présence en ligne de l’organisation",
+			"Travailler en mode projet",
+			"Mettre à disposition des utilisateurs un service informatique",
+		  ],
 		link: "",
 	},
 	{
 		title: "G-Bien Formé",
 		image: `${import.meta.env.BASE_URL}images/formation.png`,
 		description: "G-Bien Formé est une application web développée en Symfony avec une base de données PostgreSQL, elle facilite l’inscription des salariés à plusieurs formations. Ce projet a été réalisé dans le cadre de ma deuxième année de BTS SIO. ",
-		link: "",
+		competence: [
+			"Gérer le patrimoine informatique",
+			"Répondre aux incidents et aux demandes d’assistance et d’évolution",
+			"Développer la présence en ligne de l’organisation",
+			"Travailler en mode projet",
+			"Mettre à disposition des utilisateurs un service informatique",
+		  ],
+		link: "https://github.com/BBaptiste22/Formationapp",
+		showButton: true,
 	},
 	
 	{
 		title: "GAIA",
 		image: `${import.meta.env.BASE_URL}images/GAIA.png`,
 		description: "Réalisation du site internet GAIA, dédié à la présentation du hackathon du Salon de l'Agriculture 2025, dans le cadre de mon stage de deuxième année au sein de l'entreprise Ekylibre. Ce site a été entièrement développé en HTML, CSS, JavaScript et Markdown.",
+		competence: [
+			"Répondre aux incidents et aux demandes d’assistance et d’évolution",
+			"Développer la présence en ligne de l’organisation",
+			"Travailler en mode projet",
+			"Mettre à disposition des utilisateurs un service informatique",
+			"Organiser son développement professionnel",
+		  ],
 		link: "",
 	},
 	{
 		title: "ChatBot GAIA",
 		image: `${import.meta.env.BASE_URL}images/bot.png`,
 		description: "Réalisation d’un ChatBot GAIA pour la démo d’un projet du hackathon du Salon de l’Agriculture 2025, projet réalisé lors de mon stage de deuxième année au sein de l’entreprise Ekylibre. Ce ChatBot a été développé en Python, en utilisant les outils Hugging Face et l’API Llama.",
+		competence: [
+			"Gérer le patrimoine informatique",
+			"Travailler en mode projet",
+			"Mettre à disposition des utilisateurs un service informatique",
+			"Organiser son développement professionnel",
+		  ],
 		link: "",
 	},
 
@@ -110,6 +155,9 @@ export const publications = [
 		title: "Veille informationnelle",
 		image: `${import.meta.env.BASE_URL}images/veille.png`,
 		description: "Réalisation d'une veille informationnelle sur l'evolution du développement mobile afin de se tenir informé des dernières tendances et technologies dans le domaine du développement mobile.",
+		competence: [
+			"Organiser son développement professionnel",
+		  ],
 		link: "",
 		showButton: true,
 	},
@@ -117,7 +165,12 @@ export const publications = [
 		title: "Jeu Othello",
 		image: `${import.meta.env.BASE_URL}images/othello.png`,
 		description: "Création d'un jeu Othello en Java, développé dans le cadre de mon projet de première année de BTS SIO.",
-		link: "",
+		competence: [
+			"Répondre aux incidents et aux demandes d’assistance et d’évolution",
+			"Développer la présence en ligne de l’organisation",
+		  ],
+		link: "https://github.com/BBaptiste22/Othello",
+		showButton: true,
 	},
 
 
@@ -125,7 +178,38 @@ export const publications = [
 		title: "Pierre-papier-ciseaux ",
 		image: `${import.meta.env.BASE_URL}images/ppc.png`,
 		description: "Pierre-papier-ciseaux ",
-		link: "",
+		competence: [
+			"Répondre aux incidents et aux demandes d’assistance et d’évolution",
+			"Développer la présence en ligne de l’organisation",
+			"Mettre à disposition des utilisateurs un service informatique",
+		  ],
+		link: "https://github.com/BBaptiste22/PierrePapierCiseaux",
+		showButton: true,
+	},
+
+	{
+		title: "Pronote",
+		image: `${import.meta.env.BASE_URL}images/pronote.png`,
+		description: "Pronote",
+		competence: [
+			"Répondre aux incidents et aux demandes d’assistance et d’évolution",
+			"Développer la présence en ligne de l’organisation",
+		  ],
+		link: "https://github.com/BBaptiste22/Pronote",
+		showButton: true,
+	},
+
+	{
+		title: "Portfolio ",
+		image: `${import.meta.env.BASE_URL}images/portfolio.png`,
+		description: "Portfolio",
+		competence: [
+			"Développer la présence en ligne de l’organisation",
+			"Travailler en mode projet",
+			"Organiser son développement professionnel",
+		  ],
+		link: "https://github.com/BBaptiste22/Portfolio",
+		showButton: true,
 	},
 	
 	

@@ -12,7 +12,7 @@ import { publications } from "@/data/cv";
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {publications.map((paper) => (
         <div
-          class="relative group max-w-sm bg-white border border-gray-300 rounded-2xl shadow-xl overflow-hidden transition-transform transform hover:scale-[1.05] hover:shadow-lg hover:border-gray-500"
+          class="relative flex flex-col justify-between max-w-sm bg-white border border-gray-300 rounded-2xl shadow-xl overflow-hidden transition-transform transform hover:scale-[1.05] hover:shadow-lg hover:border-gray-500"
         >
           {/* Image cliquable */}
           <img
@@ -26,28 +26,53 @@ import { publications } from "@/data/cv";
             {paper.date}
           </div>
 
-          <div class="p-6 text-center">
-            <h5 class="mb-2 text-2xl font-bold tracking-wide text-black group-hover:text-gray-700 transition-all duration-300">
-              {paper.title}
-            </h5>
-            <p class="text-md text-gray-600 leading-relaxed">{paper.description}</p>
+          <div class="p-6 text-center flex flex-col justify-between grow">
+            <div>
+              <h5 class="mb-2 text-2xl font-bold tracking-wide text-black group-hover:text-gray-700 transition-all duration-300">
+                {paper.title}
+              </h5>
 
+              <p class="text-md text-gray-600 leading-relaxed">
+                <span class="font-bold">Description :</span> {paper.description}
+              </p>
 
-            <p class="text-md text-gray-600 leading-relaxed"><span class="font-bold">Compétences :</span> {paper.competence}</p>
-
+              {paper.competence && paper.competence.length > 0 && (
+                <div class="text-md text-gray-600 leading-relaxed text-left mt-4">
+                  <details class="group">
+                    <summary class="font-bold text-blue-600 cursor-pointer hover:underline">
+                      Voir les compétences
+                    </summary>
+                    <ul class="list-disc list-inside mt-2 ml-2">
+                      {paper.competence.map((c) => (
+                        <li key={c}>{c}</li>
+                      ))}
+                    </ul>
+                  </details>
+                </div>
+              )}
+            </div>
 
             {paper.showButton && (
-            <a href={paper.link} target="_blank" class="inline-block mt-4 px-6 py-2 bg-gray-700 text-white text-sm font-semibold rounded-full">
-              Voir le projet
-            </a>
+              <div class="mt-6">
+                <a
+                  href={paper.link}
+                  target="_blank"
+                  class="inline-block w-full text-center px-6 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-sm font-semibold rounded-full shadow-md hover:from-blue-700 hover:to-indigo-700 transition-all duration-300"
+                >
+                  Voir le projet
+                </a>
+              </div>
             )}
-
           </div>
         </div>
       ))}
     </div>
 
-    <div id="image-modal" class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-75 z-50 hidden">
+    {/* Modal agrandissement image */}
+    <div
+      id="image-modal"
+      class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-75 z-50 hidden"
+    >
       <div class="relative p-4">
         <button
           class="absolute top-2 right-2 text-white text-2xl font-bold cursor-pointer"
@@ -55,7 +80,12 @@ import { publications } from "@/data/cv";
         >
           ✖
         </button>
-        <img id="modal-image" class="max-w-[90vw] max-h-[90vh] rounded-lg" src="" alt="Agrandissement de l'image" />
+        <img
+          id="modal-image"
+          class="max-w-[90vw] max-h-[90vh] rounded-lg"
+          src=""
+          alt="Agrandissement de l'image"
+        />
       </div>
     </div>
   </div>
@@ -67,7 +97,7 @@ import { publications } from "@/data/cv";
     const modalImage = document.getElementById("modal-image");
     const closeModal = document.getElementById("close-modal");
 
-    document.querySelectorAll(".modal-trigger").forEach(img => {
+    document.querySelectorAll(".modal-trigger").forEach((img) => {
       img.addEventListener("click", function () {
         modalImage.src = this.getAttribute("data-image");
         modal.classList.remove("hidden");
