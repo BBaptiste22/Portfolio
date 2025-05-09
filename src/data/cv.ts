@@ -135,7 +135,8 @@ export const publications = [
 			"Mettre à disposition des utilisateurs un service informatique",
 			"Organiser son développement professionnel",
 		  ],
-		link: "",
+		link: "https://www.gaia-ia.org/",
+		showButton: true,
 	},
 	{
 		title: "ChatBot GAIA",
@@ -147,7 +148,8 @@ export const publications = [
 			"Mettre à disposition des utilisateurs un service informatique",
 			"Organiser son développement professionnel",
 		  ],
-		link: "",
+		link: "https://huggingface.co/spaces/gaia-mistral/gaia-chat",
+		showButton: true,
 	},
 
 
