@@ -204,7 +204,7 @@ export const publications = [
 	{
 		title: "Portfolio ",
 		image: `${import.meta.env.BASE_URL}images/portfolio.png`,
-		description: "Création de mon portfolio pour l’épreuve E4 du BTS-SIO, développé avec Astro et hébergé sur GitHub",
+		description: "Création de mon portfolio pour l’épreuve E5 du BTS-SIO, développé avec Astro et hébergé sur GitHub",
 		competence: [
 			"Développer la présence en ligne de l’organisation",
 			"Travailler en mode projet",
