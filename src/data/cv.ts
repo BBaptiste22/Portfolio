@@ -87,7 +87,7 @@ export const publications = [
 	{
 		title: "SIOCINE",
 		image: `${import.meta.env.BASE_URL}images/siocine.png`,
-		description: "",
+		description: "Application Android en Java de gestion de cinéma affichant les films et séries récents via une requête API, avec des informations détaillées. Réalisée dans le cadre d’un projet de deuxième année de BTS.",
 		competence: [
 			"Répondre aux incidents et aux demandes d’assistance et d’évolution",
 			"Développer la présence en ligne de l’organisation",
@@ -158,13 +158,13 @@ export const publications = [
 		competence: [
 			"Organiser son développement professionnel",
 		  ],
-		link: "",
+		link: `${import.meta.env.BASE_URL}images/Veille.pdf`,
 		showButton: true,
 	},
 	{
 		title: "Jeu Othello",
 		image: `${import.meta.env.BASE_URL}images/othello.png`,
-		description: "Création d'un jeu Othello en Java, développé dans le cadre de mon projet de première année de BTS SIO.",
+		description: "Création d'un jeu Othello en Java, développé dans le cadre d'un projet de première année de BTS SIO.",
 		competence: [
 			"Répondre aux incidents et aux demandes d’assistance et d’évolution",
 			"Développer la présence en ligne de l’organisation",
@@ -177,7 +177,7 @@ export const publications = [
 	{
 		title: "Pierre-papier-ciseaux ",
 		image: `${import.meta.env.BASE_URL}images/ppc.png`,
-		description: "Pierre-papier-ciseaux ",
+		description: "Application mobile Java de Pierre Papier Ciseaux permettant à deux utilisateurs proches de jouer ensemble grâce au service Nearby. Réalisée dans le cadre d’un projet de deuxième année de BTS.",
 		competence: [
 			"Répondre aux incidents et aux demandes d’assistance et d’évolution",
 			"Développer la présence en ligne de l’organisation",
@@ -190,7 +190,7 @@ export const publications = [
 	{
 		title: "Pronote",
 		image: `${import.meta.env.BASE_URL}images/pronote.png`,
-		description: "Pronote",
+		description: "Création d’une application Android en Java simulant le principe de Pronote, avec gestion des cours, des notes... Réalisée dans le cadre d’un projet de deuxième année de BTS.",
 		competence: [
 			"Répondre aux incidents et aux demandes d’assistance et d’évolution",
 			"Développer la présence en ligne de l’organisation",
@@ -202,7 +202,7 @@ export const publications = [
 	{
 		title: "Portfolio ",
 		image: `${import.meta.env.BASE_URL}images/portfolio.png`,
-		description: "Portfolio",
+		description: "Création de mon portfolio pour l’épreuve E4 du BTS-SIO, développé avec Astro et hébergé sur GitHub",
 		competence: [
 			"Développer la présence en ligne de l’organisation",
 			"Travailler en mode projet",
