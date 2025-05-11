@@ -107,7 +107,8 @@ export const publications = [
 			"Travailler en mode projet",
 			"Mettre à disposition des utilisateurs un service informatique",
 		  ],
-		link: "",
+		link: "https://github.com/BBaptiste22/lioran_global",
+		showButton: true,
 	},
 	{
 		title: "G-Bien Formé",
