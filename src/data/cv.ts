@@ -209,7 +209,7 @@ export const publications = [
 		"Dans le cadre de ma découverte de React, j'ai développé un siteexploitant une API externe. Ce projet m'a permis de concevoir une application capable d'explorer un catalogue de données, de générer du contenu aléatoire et d'intégrer une logique de combat.",
 	  link: "https://github.com/BBaptiste22/Pokedev",
 	  
-	  showButton: false,
+	  showButton: true,
 	},
 
 	{
@@ -219,7 +219,7 @@ export const publications = [
 		"Développement d'une application native en Swift dédiée à la gestion de catalogues cinématographiques. Suite directe de mon projet SIOCINE, cette version iOS permet d'explorer films et séries via une API REST, avec une gestion optimisée de l'affichage des détails et une interface fluide respectant les standards Apple. Projet réalisé en Bachelor chez Sup de Vinci.",
 	  link: "https://github.com/BBaptiste22/SDVCINEMA",
 	  
-	  showButton: false,
+	  showButton: true,
 	},
 
 	{
@@ -229,7 +229,7 @@ export const publications = [
 		"Développement d'une application Android en Kotlin sous architecture MVVM. Le projet exploite une API REST pour la recherche de cocktails et d'ingrédients, couplée à une base de données Room pour la gestion des favoris en mode hors-ligne. L'application intègre également un jeu de réflexes. Projet réalisé en Bachelor chez Sup de Vinci.",
 	  link: "https://github.com/BBaptiste22/Mon_Bar",
 	  
-	  showButton: false,
+	  showButton: true,
 	},
 
 	{
