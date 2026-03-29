@@ -1,23 +1,38 @@
 ---
-const listItems = [
-{ title: "HTML", image: `${import.meta.env.BASE_URL}images/html.webp` },
-{ title: "CSS", image: `${import.meta.env.BASE_URL}images/css.png` },
+const listLanguages = [
+  { title: "HTML", image: `${import.meta.env.BASE_URL}images/html.webp` },
+  { title: "CSS", image: `${import.meta.env.BASE_URL}images/css.png` },
   { title: "JavaScript", image: `${import.meta.env.BASE_URL}images/js.webp` },
+  { title: "TypeScript", image: `${import.meta.env.BASE_URL}images/typescript.png` },
   { title: "Python", image: `${import.meta.env.BASE_URL}images/py.png` },
-  { title: "Java", image: `${import.meta.env.BASE_URL}images/java.png` },
   { title: "PHP", image: `${import.meta.env.BASE_URL}images/php.png` },
+  { title: "Java", image: `${import.meta.env.BASE_URL}images/java.png` },
+  { title: "Kotlin", image: `${import.meta.env.BASE_URL}images/kotlin.png` },
+  { title: "Swift", image: `${import.meta.env.BASE_URL}images/swift.png` },
+  { title: "WLangage", image: `${import.meta.env.BASE_URL}images/WLangage.png` },
+];
+
+const listFrameworks = [
+  { title: "React", image: `${import.meta.env.BASE_URL}images/react.png` },
+  { title: "NestJS", image: `${import.meta.env.BASE_URL}images/nestjs.png` },
   { title: "Bootstrap", image: `${import.meta.env.BASE_URL}images/bootstrap.png` },
   { title: "Symfony", image: `${import.meta.env.BASE_URL}images/symfony.webp` },
   { title: "Tailwind", image: `${import.meta.env.BASE_URL}images/tailwind.png` },
-  { title: "MySQL", image: `${import.meta.env.BASE_URL}images/mysql.png` },
-  { title: "PostgreSQL", image: `${import.meta.env.BASE_URL}images/postgresql.png` },
-  
+  { title: "Django", image: `${import.meta.env.BASE_URL}images/django.png` },
 ];
 
-const listLogi = [
-  { title: "Visual Studio Code",image: `${import.meta.env.BASE_URL}images/vsc.png` },
+const listDatabase = [
+  { title: "MySQL", image: `${import.meta.env.BASE_URL}images/mysql.png` },
+  { title: "PostgreSQL", image: `${import.meta.env.BASE_URL}images/postgresql.png` },
+  { title: "SQLite", image: `${import.meta.env.BASE_URL}images/sqllite.webp` },
+];
+
+const listTools = [
+  { title: "Visual Studio Code", image: `${import.meta.env.BASE_URL}images/vsc.png` },
   { title: "Android Studio", image: `${import.meta.env.BASE_URL}images/android.png` },
-  { title: "Umbrello",image: `${import.meta.env.BASE_URL}images/uml.png` },
+  { title: "Xcode", image: `${import.meta.env.BASE_URL}images/xcode.png` },
+  { title: "WinDev", image: `${import.meta.env.BASE_URL}images/windev.png` },
+  { title: "Umbrello", image: `${import.meta.env.BASE_URL}images/uml.png` },
   { title: "GitHub", image: `${import.meta.env.BASE_URL}images/github.png` },
   { title: "GitLab", image: `${import.meta.env.BASE_URL}images/gitlab.png` },
   { title: "Hugging Face", image: `${import.meta.env.BASE_URL}images/hf.png` },
@@ -25,26 +40,49 @@ const listLogi = [
   { title: "Postman", image: `${import.meta.env.BASE_URL}images/postman.png` }
 ];
 ---
-<h2 class="text-3xl font-bold mb-6 uppercase tracking-wide">Langages maîtrisés</h2>
-
+<h2 class="text-3xl font-bold mb-6 uppercase tracking-wide">Langages</h2>
 <div class="bg-gray-100 p-8">
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-center">
-    {listItems.map((item) => (
-      <div class="flex flex-col items-center text-center">
-        <img src={item.image} alt={item.title} class="w-auto max-w-full h-20 object-contain" />
-        <h3 class="text-lg font-semibold mt-3">{item.title}</h3>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+    {listLanguages.map((item) => (
+      <div class="flex flex-col items-center">
+        <img src={item.image} alt={item.title} class="h-20 object-contain" />
+        <h3 class="mt-3 font-semibold">{item.title}</h3>
       </div>
     ))}
   </div>
 </div>
 
-<h2 class="text-3xl font-bold mt-12 mb-6 uppercase tracking-wide">Logiciels maîtrisés</h2>
+<h2 class="text-3xl font-bold mt-12 mb-6 uppercase tracking-wide">Frameworks</h2>
 <div class="bg-gray-100 p-8">
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-center">
-    {listLogi.map((item) => (
-      <div class="flex flex-col items-center text-center">
-        <img src={item.image} alt={item.title} class="w-auto max-w-full h-20 object-contain" />
-        <h3 class="text-lg font-semibold mt-3">{item.title}</h3>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+    {listFrameworks.map((item) => (
+      <div class="flex flex-col items-center">
+        <img src={item.image} alt={item.title} class="h-20 object-contain" />
+        <h3 class="mt-3 font-semibold">{item.title}</h3>
+      </div>
+    ))}
+  </div>
+</div>
+
+<h2 class="text-3xl font-bold mt-12 mb-6 uppercase tracking-wide">Bases de données</h2>
+<div class="bg-gray-100 p-8">
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+    {listDatabase.map((item) => (
+      <div class="flex flex-col items-center">
+        <img src={item.image} alt={item.title} class="h-20 object-contain" />
+        <h3 class="mt-3 font-semibold">{item.title}</h3>
+      </div>
+    ))}
+  </div>
+</div>
+
+<h2 class="text-3xl font-bold mt-12 mb-6 uppercase tracking-wide">Outils</h2>
+<div class="bg-gray-100 p-8">
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+    {listTools.map((item) => (
+      <div class="flex flex-col items-center">
+        <img src={item.image} alt={item.title} class="h-20 object-contain" />
+        <h3 class="mt-3 font-semibold">{item.title}</h3>
       </div>
     ))}
   </div>
